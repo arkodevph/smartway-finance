@@ -1,0 +1,7 @@
+node_modules/
+.openai/*
+!.openai/hosting.json
+references/*.jpg
+desktop.png
+mobile.png
+full-page.png
