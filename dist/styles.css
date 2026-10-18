@@ -10,3 +10,7 @@
 .hero>.header .brand img{width:146px;height:auto;display:block}
 @media(max-width:1000px){.hero>.header{padding:16px 32px}}
 @media(max-width:640px){.hero>.header{padding:14px 22px}.hero>.header .brand img{width:122px}}
+/* Keep the fixed homepage header above every later section. */
+.hero{z-index:10}
+.hero>.header{z-index:9999!important;isolation:isolate;overflow:visible}
+.hero>.header .desktop-nav,.hero>.header .header-actions,.hero>.header .brand{position:relative;z-index:2}
