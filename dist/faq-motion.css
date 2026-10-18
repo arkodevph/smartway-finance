@@ -26,3 +26,12 @@
 .inner-page[data-page="/faqs"] .faq-item p{font-size:15px!important;line-height:1.75!important;color:#456b78!important;max-width:62ch!important}
 .inner-page[data-page="/faqs"] .source-page h2{font-size:20px!important;letter-spacing:.01em!important}
 @media(max-width:760px){.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{display:block!important}.inner-page[data-page="/faqs"] .faq-item summary{font-size:16px!important}}
+/* Balance the FAQ hero and keep the first viewport information-rich. */
+.inner-page[data-page="/faqs"] .page-masthead{padding:78px 0 70px!important;background:#e7eeea!important;color:#0b2635!important}
+.inner-page[data-page="/faqs"] .page-masthead .content-container{display:grid!important;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr)!important;align-items:end!important;gap:64px!important;max-width:1180px!important;margin:0 auto!important;text-align:left!important}
+.inner-page[data-page="/faqs"] .page-masthead .content-container h1{font-size:clamp(52px,6vw,86px)!important;line-height:.98!important;letter-spacing:-4px!important;margin:12px 0 0!important;max-width:760px!important}
+.inner-page[data-page="/faqs"] .page-masthead .content-container>p:last-child{margin:0 0 5px!important;max-width:300px!important;color:#456b78!important;font-size:15px!important;line-height:1.7!important}
+.inner-page[data-page="/faqs"] .page-masthead .label{color:#1683a5!important;margin:0!important}
+.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:start!important}
+.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div{width:auto!important}
+@media(max-width:760px){.inner-page[data-page="/faqs"] .page-masthead .content-container{display:block!important;margin:0 22px!important}.inner-page[data-page="/faqs"] .page-masthead .content-container h1{font-size:52px!important;letter-spacing:-2.5px!important}.inner-page[data-page="/faqs"] .page-masthead .content-container>p:last-child{margin-top:28px!important}.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{display:block!important}}
