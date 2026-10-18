@@ -35,3 +35,7 @@
 .inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:start!important}
 .inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div{width:auto!important}
 @media(max-width:760px){.inner-page[data-page="/faqs"] .page-masthead .content-container{display:block!important;margin:0 22px!important}.inner-page[data-page="/faqs"] .page-masthead .content-container h1{font-size:52px!important;letter-spacing:-2.5px!important}.inner-page[data-page="/faqs"] .page-masthead .content-container>p:last-child{margin-top:28px!important}.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{display:block!important}}
+.faq-category-nav{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 34px;padding-bottom:20px;border-bottom:1px solid #b8cccf}
+.faq-category-nav a{display:inline-flex;padding:9px 13px;border:1px solid #a9c2c7;border-radius:999px;color:#123c4d;font-size:12px;font-weight:600;text-decoration:none;transition:background .25s ease,color .25s ease,border-color .25s ease}
+.faq-category-nav a:hover,.faq-category-nav a:focus-visible{background:#123c4d;border-color:#123c4d;color:#fff}
+@media(max-width:760px){.faq-category-nav{grid-column:auto;display:grid;grid-template-columns:1fr 1fr;margin-bottom:18px}.faq-category-nav a{font-size:11px}}
