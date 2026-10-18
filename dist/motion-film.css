@@ -131,3 +131,5 @@
 .film-contact .film-logo-mark img{display:block;width:27px!important;height:18px!important;max-width:27px!important;object-fit:contain;filter:brightness(0) invert(1)}
 .film-mini .film-contact .film-logo-mark{width:26px;height:26px}
 .film-mini .film-contact .film-logo-mark img{width:20px!important;height:14px!important;max-width:20px!important}
+.film-thinking .film-logo-mark{display:grid!important;place-items:center;width:24px!important;height:24px!important;border-radius:50%;background:#dbecef;overflow:hidden}
+.film-thinking .film-logo-mark img{width:18px!important;height:12px!important;max-width:18px!important;object-fit:contain;filter:none}
