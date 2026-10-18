@@ -41,3 +41,19 @@ document.addEventListener('click', event => {
   if (!event.target.closest('.finance-menu')) document.querySelector('.finance-menu').open = false;
   if (!event.target.closest('.header')) closeMenu();
 });
+const lenders = document.querySelector('.lenders');
+const marqueeToggle = document.querySelector('#marquee-toggle');
+function setMarqueePaused(paused) {
+  lenders.classList.toggle('is-paused', paused);
+  marqueeToggle.setAttribute('aria-label', paused ? 'Play lender marquee' : 'Pause lender marquee');
+  marqueeToggle.querySelector('use').setAttribute('href', paused ? '#play' : '#pause');
+}
+setMarqueePaused(reducedMotion.matches);
+marqueeToggle.addEventListener('click', () => {
+  lenders.classList.add('motion-enabled');
+  setMarqueePaused(!lenders.classList.contains('is-paused'));
+});
+reducedMotion.addEventListener('change', () => {
+  lenders.classList.remove('motion-enabled');
+  setMarqueePaused(reducedMotion.matches);
+});
