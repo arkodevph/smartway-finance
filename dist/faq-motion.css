@@ -1,0 +1,18 @@
+.inner-page[data-page="/faqs"] .page-masthead{padding:74px 0 56px;text-align:left}
+.inner-page[data-page="/faqs"] .page-masthead .content-container{text-align:left;margin-left:6%;margin-right:6%}
+.inner-page[data-page="/faqs"] .page-masthead p{margin-left:0}
+.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2){padding:54px 0;background:#f4f7f5}
+.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{max-width:1328px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 72px}
+.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div{display:block;padding:32px 0;border-top:1px solid #cbd9d6;animation:faq-category-in .7s cubic-bezier(.22,1,.36,1) both}
+.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div:nth-child(2){animation-delay:.08s}.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div:nth-child(3){animation-delay:.16s}.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div:nth-child(4){animation-delay:.24s}.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div:nth-child(5){animation-delay:.32s}
+@keyframes faq-category-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.inner-page[data-page="/faqs"] .source-page h2{margin:0 0 16px;font-size:18px;letter-spacing:-.2px;color:#1683a5}
+.inner-page[data-page="/faqs"] .surface{padding:0;border:0;background:transparent}
+.inner-page[data-page="/faqs"] .faq-item{padding:14px 0;border-bottom:1px solid #d5e0de}
+.inner-page[data-page="/faqs"] .faq-item summary{font-size:14px;line-height:1.35;font-weight:600}
+.inner-page[data-page="/faqs"] .faq-item summary span{font-size:18px;transition:transform .35s ease}
+.inner-page[data-page="/faqs"] .faq-item[open] summary{color:#0c86a8}
+.inner-page[data-page="/faqs"] .faq-item p{font-size:13px;line-height:1.65;margin:12px 30px 4px 0;animation:faq-answer-in .4s ease both}
+@keyframes faq-answer-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(max-width:760px){.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container{display:block}.inner-page[data-page="/faqs"] .page-masthead{padding:56px 0 42px}.inner-page[data-page="/faqs"] .page-masthead .content-container{margin:0 22px}}
+@media(prefers-reduced-motion:reduce){.inner-page[data-page="/faqs"] .source-page>.content-section:nth-child(2)>.content-container>div,.inner-page[data-page="/faqs"] .faq-item p{animation:none}}
