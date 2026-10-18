@@ -14,3 +14,6 @@
 .hero{z-index:10}
 .hero>.header{z-index:9999!important;isolation:isolate;overflow:visible}
 .hero>.header .desktop-nav,.hero>.header .header-actions,.hero>.header .brand{position:relative;z-index:2}
+/* Elevate the homepage header layer above all scrolling content. */
+body>.hero{z-index:1000!important}
+body>.hero>.header{z-index:10000!important}
