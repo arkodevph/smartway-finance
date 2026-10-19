@@ -100,3 +100,31 @@
 @media(max-width:800px){#journal.journal-spread{padding:72px 0}#journal .editorial-heading{display:flex;margin-bottom:42px;gap:24px}#journal .editorial-heading h2{font-size:49px;letter-spacing:-2px}#journal .editorial-heading>.text-link{margin:0;font-size:11px}#journal .journal-feature{display:flex;gap:28px;padding-bottom:40px}#journal .journal-layout{column-gap:32px;row-gap:40px}#journal .journal-story h3{font-size:26px}#journal .journal-feature h3{font-size:36px;max-width:650px}#journal .journal-story-copy>.journal-summary{font-size:14px}#journal .journal-story .eyebrow{margin-bottom:15px}}
 @media(max-width:600px){#journal.journal-spread{padding:60px 0}#journal .editorial-heading{align-items:flex-start;flex-direction:column;gap:16px;margin-bottom:35px}#journal .editorial-heading h2{font-size:46px;margin-top:16px}#journal .editorial-heading>.text-link{font-size:12px;padding:8px 0}#journal .journal-layout{grid-template-columns:1fr;gap:40px}#journal .journal-story,#journal .journal-feature{gap:24px;padding-bottom:35px}#journal .journal-feature h3{font-size:32px;letter-spacing:-1px}#journal .journal-story h3{font-size:28px;line-height:1.18;margin-bottom:18px}#journal .journal-story-copy>.journal-summary{font-size:14px;line-height:1.85;margin-bottom:20px}#journal .journal-story-copy>.journal-meta{margin-bottom:14px}}
 @media(prefers-reduced-motion:reduce){#journal .journal-story h3,#journal .journal-story .text-link{transition:none}}
+
+/* Hero typography and hierarchy refinement. Media positioning stays unchanged. */
+.hero-copy{max-width:860px;position:relative;margin-left:-24px;padding:18px 24px 24px;border-radius:24px;background:linear-gradient(90deg,rgba(5,26,42,.66) 0%,rgba(5,26,42,.42) 68%,rgba(5,26,42,0) 100%)}
+.hero-shade{background:linear-gradient(90deg,rgba(5,26,42,.72) 0%,rgba(5,26,42,.56) 28%,rgba(5,26,42,.2) 57%,rgba(5,26,42,.05) 100%),linear-gradient(0deg,rgba(5,26,42,.7),transparent 29%,transparent 76%,rgba(5,26,42,.32))}
+.hero-copy h1{font-size:clamp(56px,5.2vw,86px);line-height:1.02;letter-spacing:-4px;margin:24px 0 25px;max-width:900px;white-space:nowrap}
+.hero-copy h1>span{display:block}
+.hero-description{max-width:560px;font-size:18px;line-height:1.7}
+.categories{gap:7px;margin-top:22px}
+.categories>a{padding:10px 15px;font-size:12px;background:rgba(5,26,42,.36);border-color:#ffffff55}
+.hero-actions{margin-top:25px}
+.hero-bottom{padding-top:24px;margin-bottom:69px}
+.metrics{gap:0}
+.metrics>div{min-width:128px}
+
+@media(max-width:1100px){.hero-copy{max-width:760px}.hero-copy h1{font-size:clamp(52px,6.5vw,76px);letter-spacing:-3px}.hero-description{font-size:16px}}
+@media(max-width:640px){.hero-copy{max-width:100%;margin-left:0;padding:14px 0 20px;background:linear-gradient(90deg,rgba(5,26,42,.48),rgba(5,26,42,0))}.hero-copy h1{font-size:clamp(43px,10.8vw,66px);letter-spacing:-2.5px;line-height:1.07;margin:21px 0;white-space:normal}.hero-description{font-size:12px;line-height:1.85;max-width:330px}.categories{margin-top:20px}.hero-actions{margin-top:23px}.hero-bottom{margin-bottom:66px}.metrics>div{min-width:0}}
+
+/* Split hero direction: text owns a calm column, the coastal scene owns the image column. */
+@media(min-width:641px){
+  .hero{background:#082b3a}
+  .hero-video{left:48%;right:0;width:auto;object-position:58% center}
+  .hero-shade{left:48%;right:0;width:auto;background:linear-gradient(90deg,rgba(8,43,58,.72),rgba(8,43,58,.16) 42%,rgba(8,43,58,.04) 100%),linear-gradient(0deg,rgba(5,27,40,.44),transparent 34%,rgba(5,27,40,.12))}
+  .hero-body{width:48%;max-width:none;margin:0;padding:95px 64px 70px max(56px,calc((100vw - 1440px)/2));align-items:center}
+  .hero-copy{max-width:640px;margin:0;padding:0;background:none;border-radius:0}
+  .hero-copy h1{font-size:clamp(52px,5vw,82px);max-width:640px;letter-spacing:-4px}
+  .hero-description{max-width:500px;font-size:16px}
+  .hero-bottom{width:calc(100% - 112px);margin-inline:auto}
+}

@@ -13,11 +13,13 @@ function loadVideo() {
   }
   return video.play().catch(updatePlayback);
 }
-video.addEventListener('play', updatePlayback);
-video.addEventListener('pause', updatePlayback);
-toggle.addEventListener('click', () => video.paused ? loadVideo() : video.pause());
-reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) video.pause(); });
-if (!reducedMotion.matches && !navigator.connection?.saveData) loadVideo();
+if (video && toggle) {
+  video.addEventListener('play', updatePlayback);
+  video.addEventListener('pause', updatePlayback);
+  toggle.addEventListener('click', () => video.paused ? loadVideo() : video.pause());
+  reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) video.pause(); });
+  if (!reducedMotion.matches && !navigator.connection?.saveData) loadVideo();
+}
 const menuButton = document.querySelector('.mobile-toggle');
 const mobileMenu = document.querySelector('#mobile-nav');
 function closeMenu() {
